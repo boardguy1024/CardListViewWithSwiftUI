@@ -18,42 +18,60 @@ struct ContentView: View {
         [.init(name: "Deadpool 2", imageName: "movie1"),
          .init(name: "The Shape of Water", imageName: "movie2")],
         [.init(name: "Incredibles 2", imageName: "movie3"),
+         .init(name: "Tomb Raider", imageName: "movie4")],
+        [.init(name: "Deadpool 2", imageName: "movie1"),
+         .init(name: "The Shape of Water", imageName: "movie2")],
+        [.init(name: "Incredibles 2", imageName: "movie3"),
          .init(name: "Tomb Raider", imageName: "movie4")]
     ]
     
     var body: some View {
         
-        VStack (spacing: 16) {
-            Text("KBTA Movies")
-                .font(.system(size: 16))
-            ForEach(movies, id: \.self) { row in
-                HStack (spacing: 12) {
-                    ForEach(row) { movie in
-                        VStack (spacing: 8) {
-                            Image(movie.imageName)
-                                .resizable()
-                                .clipped()
-                            Text(movie.name)
-                            
-                            Button(action: {
-                                
-                            }) {
-                                Text("Buy Tickets")
-                                    .padding(.horizontal, 16)
-                                    .padding(.vertical, 6)
-                                    .background(Color.red)
-                                    .foregroundColor(Color.white)
-                                .cornerRadius(4)
+        GeometryReader { geo in
+            ScrollView {
+                VStack (spacing: 16) {
+                    Text("KBTA Movies")
+                        .font(.system(size: 16))
+                    ForEach(self.movies, id: \.self) { row in
+                        HStack (spacing: 12) {
+                            ForEach(row) { movie in
+                                MovieView(movie: movie, size: geo.size)
                             }
                         }
-                        
                     }
+                    Spacer()
                 }
-                
             }
-            Spacer()
         }
+      
         
+    }
+}
+
+struct MovieView: View {
+    var movie: Movie
+    var size: CGSize
+    var body: some View {
+        VStack (spacing: 8) {
+            Image(movie.imageName)
+                .resizable()
+                .scaledToFill()
+                .frame(width: (size.width - 48) / 2, height: 250)
+                .cornerRadius(8)
+            
+            Text(movie.name)
+            
+            Button(action: {
+                
+            }) {
+                Text("Buy Tickets")
+                    .padding(.horizontal, 16)
+                    .padding(.vertical, 6)
+                    .background(Color.red)
+                    .foregroundColor(Color.white)
+                    .cornerRadius(4)
+            }
+        }
     }
 }
 
