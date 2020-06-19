@@ -13,6 +13,7 @@
 		A2EA6846249B03F2000C4A42 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2EA6845249B03F2000C4A42 /* Assets.xcassets */; };
 		A2EA6849249B03F2000C4A42 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2EA6848249B03F2000C4A42 /* Preview Assets.xcassets */; };
 		A2EA684C249B03F2000C4A42 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2EA684A249B03F2000C4A42 /* LaunchScreen.storyboard */; };
+		A2EA6854249B6410000C4A42 /* BuyTickersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2EA6853249B6410000C4A42 /* BuyTickersView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		A2EA6848249B03F2000C4A42 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A2EA684B249B03F2000C4A42 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A2EA684D249B03F2000C4A42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A2EA6853249B6410000C4A42 /* BuyTickersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyTickersView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 				A2EA6843249B03EF000C4A42 /* ContentView.swift */,
 				A2EA6845249B03F2000C4A42 /* Assets.xcassets */,
 				A2EA684A249B03F2000C4A42 /* LaunchScreen.storyboard */,
+				A2EA6853249B6410000C4A42 /* BuyTickersView.swift */,
 				A2EA684D249B03F2000C4A42 /* Info.plist */,
 				A2EA6847249B03F2000C4A42 /* Preview Content */,
 			);
@@ -149,6 +152,7 @@
 				A2EA6840249B03EF000C4A42 /* AppDelegate.swift in Sources */,
 				A2EA6842249B03EF000C4A42 /* SceneDelegate.swift in Sources */,
 				A2EA6844249B03EF000C4A42 /* ContentView.swift in Sources */,
+				A2EA6854249B6410000C4A42 /* BuyTickersView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
