@@ -3,6 +3,6 @@
 Build like collectionView and detailViews
 
 ## スクリーンショット
-![header](./screen1.jpg) ![header](./screen2.jpg)
+![header](./screen1.png) ![header](./screen2.png)
 
 
