@@ -15,7 +15,7 @@ struct Movie: Identifiable, Hashable {
 struct ContentView: View {
     
     let movies: [[Movie]] = [
-        [.init(name: "Deadpool 2", imageName: "movie1"),
+        [.init(name: "Deadpool 21", imageName: "movie1"),
          .init(name: "The Shape of Water", imageName: "movie2")],
         [.init(name: "Incredibles 2", imageName: "movie3"),
          .init(name: "Tomb Raider", imageName: "movie4")],
